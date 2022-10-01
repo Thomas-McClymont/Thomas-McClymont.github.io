@@ -1,0 +1,49 @@
+@include media-up(lg){
+    footer{
+        font-family: 'Roboto';
+        padding-top: 10px;
+        padding-bottom: 30px;
+        background-color: #1B1B1B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        
+        .lista{
+            display: inline;
+            padding: 20px;
+            color: white;
+            margin-left: 30px;
+        }
+        li a{
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+        }
+        img{
+            height: 60px;
+            margin-top: 30px;
+            margin-left: 206px;
+        }
+        .ul-privacidad{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .politicas{
+            
+            font-weight: lighter;
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            padding: 20px;
+        }
+        .p-copyright{
+            margin-top: 10px;
+            font-weight: lighter;
+            color: white;
+        }
+
+    }
+    
+}

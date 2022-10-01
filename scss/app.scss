@@ -1,0 +1,17 @@
+// DESIGN
+@import './design/colors.scss';
+@import './design/typography.scss';
+@import './design/general.scss';
+//media
+@import './mediaqueries.scss';
+// LAYOUT
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/section.scss';
+@import './layout/footer.scss';
+// PAGES
+@import './pages/index.scss';
+@import './pages/calendar.scss';
+@import './pages/staff.scss';
+@import './pages/plans.scss';
+@import './pages/contact.scss';

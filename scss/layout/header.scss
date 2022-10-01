@@ -1,0 +1,42 @@
+@include media-up(lg){
+    header{
+        background-color: #1B1B1B;
+        img{
+            height: 60px;
+            padding: 20px;
+        }
+        display: flex;
+        justify-content: space-between;
+        #navegador{
+            margin-top: 37px;
+        }
+        .lista{
+            font-family: 'Roboto';
+            font-weight: lighter;
+            display: inline;
+            padding: 20px;
+            color: white;
+            margin-left: 30px;
+        }
+        li a{
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+        }
+        //Lo voy acambiar a un boton para la ultima entrega
+        #nav-signin{
+            margin-top: 23px;
+            font-family: 'Roboto';
+            font-weight: lighter;
+            height: 30px;
+            padding: 10px;
+            color: white;
+            background-color: #454545;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-right: 25px;
+        }
+    
+    }
+
+}
