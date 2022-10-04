@@ -1,0 +1,48 @@
+@include media-up(lg){
+    #main-contacto{
+        font-family: 'Roboto';
+        background-image: url(../images/FondoContacto.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+   
+        #div-contacto{
+            background-color: #C9CED2;
+            margin-top: -200px;
+            padding: 30px;
+            border-radius:20px ;
+        }
+        #h1-contacto{
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            font-weight: regular;
+            font-size: 70px;
+            font-style: italic;
+        }
+        #p-sede{
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        .titulos-contacto{
+            margin-top: 30px;
+            font-size: 25px;
+            font-weight:lighter;
+            font-style: italic;
+        }
+        .detalles-contacto{
+            font-size: 20px;
+            font-weight: lighter;
+            margin-top: 5px;
+        }
+
+    }
+    
+}

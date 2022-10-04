@@ -1,0 +1,47 @@
+@include media-up(lg){
+    #main-staff{
+        font-family: 'Roboto';
+        background-image: url(../images/FondoStaff.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 200vh;
+        display: flex; 
+        justify-content: center;
+        #div-main-staff{
+            #h1-staff{
+                display: flex; 
+                justify-content: center;
+                margin: 50px;
+                color: rgb(255, 255, 255);
+                font-weight: regular;
+                font-size: 70px;
+                font-style: italic;
+            }
+            .div-staff{
+                margin: 20px;
+                padding: 20px;
+                padding-bottom: 0px;
+                background-color: #B9A787;
+                border-radius: 20px;
+                .img-staff{
+                    margin-top: 5px;
+                }
+
+                .nombre-staff{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    font-weight: lighter;
+                }
+            }
+            .div-filas{
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                
+            }
+
+        }
+    }
+}
