@@ -265,13 +265,50 @@
       color: white; } }
 
 @media screen and (min-width: 1024px) {
+  #main-calendar {
+    background-image: url(../images/FondoCalendar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    #main-calendar .div-calendar {
+      font-family: 'Roboto';
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #main-calendar .div-calendar .div-dias {
+        border-radius: 15px;
+        margin: 20px;
+        background-color: rgba(101, 101, 101, 0.8);
+        width: 220px;
+        padding: 20px;
+        color: white; }
+        #main-calendar .div-calendar .div-dias .dia-h2 {
+          display: flex;
+          justify-content: center;
+          font-size: 40px;
+          font-weight: bold;
+          font-style: italic;
+          padding: 20px; }
+        #main-calendar .div-calendar .div-dias .sector-h3 {
+          display: flex;
+          justify-content: center;
+          border-radius: 20px;
+          background-color: #92c48a;
+          font-size: 25px;
+          font-weight: lighter;
+          padding: 10px; }
+        #main-calendar .div-calendar .div-dias .p-horarios {
+          padding: 10px;
+          font-size: 20px;
+          font-weight: lighter; } }
+
+@media screen and (min-width: 1024px) {
   #main-staff {
     font-family: 'Roboto';
     background-image: url(../images/FondoStaff.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 200vh;
     display: flex;
     justify-content: center; }
     #main-staff #div-main-staff #h1-staff {
@@ -286,7 +323,7 @@
       margin: 20px;
       padding: 20px;
       padding-bottom: 0px;
-      background-color: #B9A787;
+      background-color: #d8cab3;
       border-radius: 20px; }
       #main-staff #div-main-staff .div-staff .img-staff {
         margin-top: 5px; }
@@ -299,6 +336,48 @@
       display: flex;
       align-items: center;
       justify-content: center; } }
+
+@media screen and (min-width: 1024px) {
+  #main-plan {
+    background-image: url(../images/FondoCalendar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #main-plan .div-plan {
+      border-radius: 15px;
+      margin: 20px;
+      background-color: rgba(101, 101, 101, 0.8);
+      width: 270px;
+      padding: 20px;
+      color: white; }
+      #main-plan .div-plan .h2-plan {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 20px; }
+      #main-plan .div-plan .detalles-plan {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-weight: lighter; }
+      #main-plan .div-plan .h3-membresia {
+        display: flex;
+        justify-content: center;
+        background-color: #de8585;
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 10px; }
+      #main-plan .div-plan .p-monto {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: lighter; } }
 
 @media screen and (min-width: 1024px) {
   #main-contacto {
