@@ -1,7 +1,7 @@
-@include media-up(lg){
-    //SECTOR BLOOD SWEAT RESPECT
+#section-index{
+    font-family: $primary-typography;
+    //SECTOR BLOOD SWAET RESPECT
     #div-blood{
-        font-family: $primary-typography;
         background-image: url(../images/FondoPesa.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -10,197 +10,254 @@
         justify-content: center;
         align-items: center;
         padding: 40px;
+        #h2-blood{
+            color: $text-color;
+            font-weight: regular;
+            font-style:oblique;
+            @include media-up(sm){
+                font-size: 30px;
+                padding-top: 10px;
+            }
+            @include media-up(lg){
+                font-size: 50px;
+                padding-top: 20px;
+            }
+        }
+        #p-blood{
+            color: $text-color;
+            font-weight: lighter;
+            @include media-up(sm){
+                font-size: 13px;
+                padding-top: 10px;
+            }
+            @include media-up(lg){
+                font-size: 15px;
+                padding-top: 5px;
+            }
+        }
+        #p-lorem{
+            color: $text-color;
+            text-align: center;
+            font-weight: lighter;
+            @include media-up(sm){
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            @include media-up(lg){
+                margin-top: 30px;
+                margin-bottom: 20px;
+                padding-left: 300px;
+                padding-right: 300px;
+            }
+        }
     }
-    #h2-blood{
-        padding-top: 20px;
-        color: $text-color;
-        font-size: 50px;
-        font-weight: regular;
-        font-style:oblique;
-    }
-    #p-blood{
-        color: $text-color;
-        font-size: 15px;
-        font-weight: lighter;
-
-    }
-    #p-lorem{
-        color: $text-color;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding-left: 300px;
-        padding-right: 300px;
-    }
-    //SECTOR MUSCULACION
+    //SECTOR MUSCULACIÓN
     #musculacion{
         background-image: url(../images/FondoMusculacion.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: $primary-typography;
-        height: 500px;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media-up(sm){
+            background-position: center;
+            height: 100vh;
+        }
+        @include media-up(lg){
+            height: 500px;
+        }
+        #h3-musculacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: $text-color;  
+            font-weight: lighter;
+            @include media-up(sm){
+                padding-top: 30px;
+                font-size: 30px;
+            }
+            @include media-up(lg){
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+        #contenido-musculacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $black05-color;
+            width: 100%;
+        }
+        #musculacion-vermas{
+            text-decoration: none;
+            list-style-type: none;
+            color: $black-text-color;
+            background-color: $musculacion-color;
+            border-radius: 10px;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
     }
-    #h3-musculacion{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        color: $text-color;
-        padding-top: 30px;
-        font-size: 40px;
-        font-weight: lighter;
-    }
-    #contenido-musculacion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $black05-color;
-        width: 100%;
-
-    }
-    #musculacion-vermas{
-        text-decoration: none;
-        list-style-type: none;
-        color: $black-text-color;
-        background-color: $musculacion-color;
-        border-radius: 10px;
-        font-weight: lighter;
-        font-size: 15px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    //FIN SECTOR MUSCULACION
-
     //SECTOR CROSSFIT
     #crossfit{
         background-image: url(../images/FondoCrossfit.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: $primary-typography;
-        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media-up(sm){
+            background-position: center;
+            height: 100vh;
+        }
+        @include media-up(lg){
+            height: 500px;
+        }
+        #h3-crossfit{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: $text-color;  
+            font-weight: lighter;
+            @include media-up(sm){
+                padding-top: 30px;
+                font-size: 30px;
+            }
+            @include media-up(lg){
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+        #contenido-crossfit{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $black05-color;
+            width: 100%;
+        }
+        #crossfit-vermas{
+            text-decoration: none;
+            list-style-type: none;
+            color: $black-text-color;
+            background-color: $crossfit-color;
+            border-radius: 10px;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
     }
-    #h3-crossfit{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        color: $text-color;
-        padding-top: 30px;
-        font-size: 40px;
-        font-weight: lighter;
-    }
-    #contenido-crossfit{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $black05-color;
-        width: 100%;
-
-    }
-    #crossfit-vermas{
-        text-decoration: none;
-        list-style-type: none;
-        color: $black-text-color;
-        background-color: $crossfit-color;
-        border-radius: 10px;
-        font-weight: lighter;
-        font-size: 15px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    //FIN SECTOR CROSSFIT
-
     //SECTOR SPINNING
     #spinning{
         background-image: url(../images/FondoSpinning.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-family: $primary-typography;
-        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media-up(sm){
+            background-position: center;
+            height: 100vh;
+        }
+        @include media-up(lg){
+            height: 500px;
+        }
+        #h3-spinning{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: $text-color;  
+            font-weight: lighter;
+            @include media-up(sm){
+                padding-top: 30px;
+                font-size: 30px;
+            }
+            @include media-up(lg){
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+        #contenido-spinning{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $black05-color;
+            width: 100%;
+        }
+        #spinning-vermas{
+            text-decoration: none;
+            list-style-type: none;
+            color: $black-text-color;
+            background-color: $spinning-color;
+            border-radius: 10px;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
     }
-    #h3-spinning{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        color: $text-color;
-        padding-top: 30px;
-        font-size: 40px;
-        font-weight: lighter;
-    }
-    #contenido-spinning{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $black05-color;
-        width: 100%;
-
-    }
-    #spinning-vermas{
-        text-decoration: none;
-        list-style-type: none;
-        color: $black-text-color;
-        background-color: $spinning-color;
-        border-radius: 10px;
-        font-weight: lighter;
-        font-size: 15px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    //FIN SECTOR SPINNING
-
     //SECTOR NUTRICION
     #nutricion{
         background-image: url(../images/FondoNutricion.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        font-family: $primary-typography;
-        height: 500px;
+        font-family: $primary-typography;  
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media-up(sm){
+            background-position: center;
+            height: 100vh;
+        }
+        @include media-up(lg){
+            height: 500px;
+        }
+        #h3-nutricion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: $text-color;  
+            font-weight: lighter;
+            @include media-up(sm){
+                padding-top: 30px;
+                font-size: 30px;
+            }
+            @include media-up(lg){
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+        #contenido-nutricion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $black05-color;
+            width: 100%;
+        }
+        #nutricion-vermas{
+            text-decoration: none;
+            list-style-type: none;
+            color: $black-text-color;
+            background-color: $nutricion-color;
+            border-radius: 10px;
+            font-weight: lighter;
+            font-size: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
     }
-    #h3-nutricion{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        color: $text-color;
-        padding-top: 30px;
-        font-size: 40px;
-        font-weight: lighter;
-    }
-    #contenido-nutricion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $black05-color;
-        width: 100%;
-
-    }
-    #nutricion-vermas{
-        text-decoration: none;
-        list-style-type: none;
-        color: $black-text-color;
-        background-color: $nutricion-color;
-        border-radius: 10px;
-        font-weight: lighter;
-        font-size: 15px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    //FIN SECTOR SPINNING
 }

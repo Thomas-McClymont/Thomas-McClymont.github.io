@@ -1,73 +1,177 @@
-@include media-up(lg){
-    #main-calendar{
-        background-image: url(../images/FondoCalendar.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;   
-        .div-calendar{
-            font-family: 'Roboto';
+// @include media-up(lg){
+//     #main-calendar{
+//         background-image: url(../images/FondoCalendar.jpg);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-attachment: fixed;   
+//         .div-calendar{
+//             font-family: 'Roboto';
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             .div-dias{
+//                 border-radius: 15px;
+//                 margin: 20px;
+//                 background-color: $plans-calendar-color;
+//                 width: 220px;
+//                 padding: 20px;
+//                 color: $text-color;
+//                 .dia-h2{  
+//                     display: flex;
+//                     justify-content: center;
+//                     font-size: 40px;
+//                     font-weight: bold;
+//                     font-style: italic; 
+//                     padding: 20px; 
+//                 }
+//                 .sector-h3{
+//                     display: flex;
+//                     justify-content: center;
+//                     border-radius: 20px;
+//                     background-color: rgb(146, 196, 138);
+//                     font-size: 25px;
+//                     font-weight: lighter;
+//                     padding: 10px;  
+//                 }
+//                 .musculacion-h3{
+//                     display: flex;
+//                     justify-content: center;
+//                     border-radius: 10px;
+//                     background-color: $musculacion-color;
+//                     font-size: 25px;
+//                     font-weight: lighter;
+//                     padding: 10px;
+//                 }
+//                 .crossfit-h3{
+//                     display: flex;
+//                     justify-content: center;
+//                     border-radius: 10px;
+//                     background-color: $crossfit-color;
+//                     font-size: 25px;
+//                     font-weight: lighter;
+//                     padding: 10px;
+//                 }
+//                 .spinning-h3{
+//                     display: flex;
+//                     justify-content: center;
+//                     border-radius: 10px;
+//                     background-color: $spinning-color;
+//                     font-size: 25px;
+//                     font-weight: lighter;
+//                     padding: 10px;
+//                 }
+//                 .p-horarios{
+//                     padding: 10px;
+//                     font-size: 20px;
+//                     font-weight: lighter;
+//                 }
+//             }
+//         }
+
+//     }
+    
+// }
+//
+#main-calendar{
+    background-image: url(../images/FondoCalendar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: $primary-typography;
+    .div-calendar{  
+        @include media-up(sm){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include media-up(lg){
             display: flex;
             flex-direction: row;
             justify-content: center;
-            .div-dias{
+        }    
+        .div-dias{
+            background-color: $plans-calendar-color;
+            padding: 20px;
+            color: $text-color;
+            @include media-up(sm){
+                border-radius: 10px;
+                margin: 10px;
+                width: 330px;
+            }
+            @include media-up(lg){
                 border-radius: 15px;
                 margin: 20px;
-                background-color: $plans-calendar-color;
                 width: 220px;
+            }  
+            .dia-h2{  
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-style: italic; 
                 padding: 20px;
-                color: $text-color;
-                .dia-h2{  
-                    display: flex;
-                    justify-content: center;
+                @include media-up(sm){
+                    font-size: 30px;
+                }
+                @include media-up(lg){
                     font-size: 40px;
-                    font-weight: bold;
-                    font-style: italic; 
-                    padding: 20px; 
+                } 
+            }
+            .musculacion-h3{
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: $musculacion-color;
+                font-weight: lighter;
+                padding: 10px;
+                @include media-up(sm){
+                    font-size: 22px;
                 }
-                .sector-h3{
+                @include media-up(lg){
+                    font-size: 25px;
+                } 
+            }
+            .crossfit-h3{
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: $crossfit-color;
+                font-weight: lighter;
+                padding: 10px;
+                @include media-up(sm){
+                    font-size: 22px;
+                }
+                @include media-up(lg){
+                    font-size: 25px;
+                } 
+            }
+            .spinning-h3{
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                background-color: $spinning-color;
+                font-weight: lighter;
+                padding: 10px;
+                @include media-up(sm){
+                    font-size: 22px;
+                }
+                @include media-up(lg){
+                    font-size: 25px;
+                } 
+            }
+            .p-horarios{ 
+                font-weight: lighter;
+                @include media-up(sm){
+                    font-size: 18px;
                     display: flex;
                     justify-content: center;
-                    border-radius: 20px;
-                    background-color: rgb(146, 196, 138);
-                    font-size: 25px;
-                    font-weight: lighter;
-                    padding: 10px;  
+                    padding: 20px;
                 }
-                .musculacion-h3{
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 10px;
-                    background-color: $musculacion-color;
-                    font-size: 25px;
-                    font-weight: lighter;
-                    padding: 10px;
-                }
-                .crossfit-h3{
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 10px;
-                    background-color: $crossfit-color;
-                    font-size: 25px;
-                    font-weight: lighter;
-                    padding: 10px;
-                }
-                .spinning-h3{
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 10px;
-                    background-color: $spinning-color;
-                    font-size: 25px;
-                    font-weight: lighter;
-                    padding: 10px;
-                }
-                .p-horarios{
-                    padding: 10px;
+                @include media-up(lg){
                     font-size: 20px;
-                    font-weight: lighter;
-                }
+                    padding: 10px;
+                } 
             }
         }
-
     }
-    
 }

@@ -1,46 +1,68 @@
-@include media-up(lg){
-    #main-staff{
-        font-family: 'Roboto';
-        background-image: url(../images/FondoStaff.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: flex; 
-        justify-content: center;
-        #div-main-staff{
-            #h1-staff{
-                display: flex; 
-                justify-content: center;
-                margin: 50px;
-                color: $text-color;
-                font-weight: regular;
-                font-size: 70px;
-                font-style: italic;
+#main-staff{
+    font-family: $primary-typography;
+    background-image: url(../images/FondoStaff.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex; 
+    justify-content: center;
+    #div-main-staff{
+        .div-filas{
+            @include media-up(sm){
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;  
             }
-            .div-staff{
+            @include media-up(lg){
+                display: flex;
+                flex-direction: row; 
+                align-items: center;
+                justify-content: center;  
+            }          
+        }
+        #h1-staff{
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+            color: $text-color;
+            font-weight: regular;
+            font-style: italic;
+            @include media-up(sm){
+                font-size: 35px;
+            }
+            @include media-up(lg){
+                font-size: 70px;
+            }
+        }
+        .div-staff{
+            background-color: #bcbcbc;
+            @include media-up(sm){
+                border-radius: 10px;
+                margin: 10px;
+                padding: 15px;    
+            }
+            @include media-up(lg){
+                border-radius: 20px;
                 margin: 20px;
                 padding: 20px;
-                padding-bottom: 0px;
-                background-color: #d8cab3;
-                border-radius: 20px;
-                .img-staff{
-                    margin-top: 5px;
+            }
+            .nombre-staff{
+                display: flex;
+                justify-content: center; 
+                font-weight: lighter;
+                font-style: italic;
+                background-color: rgb(82, 82, 82);
+                color: $text-color;
+                border-radius: 5px;
+                padding: 5px;
+                @include media-up(sm){
+                    font-size: 25px;
                 }
-
-                .nombre-staff{
-                    display: flex;
-                    justify-content: center;
+                @include media-up(lg){
                     font-size: 30px;
-                    font-weight: lighter;
                 }
             }
-            .div-filas{
-                display: flex; 
-                align-items: center;
-                justify-content: center;
-                
-            }
-
-        }
+        } 
     }
 }

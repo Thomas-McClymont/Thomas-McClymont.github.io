@@ -1,38 +1,57 @@
-@include media-up(lg){
-    #main-index{
-        font-family: $primary-typography;
-        background-image: url(../images/FondoReal.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: 100vh;
-        display: flex; 
-        align-items: center;
+#main-index{
+    font-family: $primary-typography;
+    background-image: url(../images/FondoReal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    #div-index{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        #div-index{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #h1-wings{
+        align-items: center;
+    }
+    #h1-wings{
+        color: $text-color;
+        @include media-up(sm){
             margin-top: -180px;
-            color: $text-color;
+            font-weight: 900;
+            font-size: 100px;
+
+        }
+        @include media-up(lg){
+            margin-top: -180px;
             font-weight: 900;
             font-size: 180px;
         }
-        #Rosario{
-            color: $text-color;  
-            font-weight: lighter;
-            font-size: 40px;
+    }
+    #Rosario{
+        color: $text-color;  
+        font-weight: lighter;
+        @include media-up(sm){
+            font-size: 30px;
         }
-        #boton-vermas{
-            background-color: #C5A99C;
-            font-weight: lighter;
+        @include media-up(lg){
+            font-size: 40px;
+        }  
+    }
+    #boton-vermas{
+        background-color: #C5A99C;
+        font-weight: lighter;
+        @include media-up(sm){
+            font-size: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        @include media-up(lg){
             font-size: 20px;
             padding: 25px;
             border-radius: 15px;
             margin-top: 40px;
         }
-    }
+    }   
 }

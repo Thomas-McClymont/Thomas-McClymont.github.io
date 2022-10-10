@@ -9,7 +9,6 @@
         display: flex; 
         align-items: center;
         justify-content: center;
-   
         #div-contacto{
             background-color: $contact-color;
             margin-top: -200px;
@@ -42,7 +41,80 @@
             font-weight: lighter;
             margin-top: 5px;
         }
-
     }
     
+}
+//
+#main-contacto{
+    font-family: $primary-typography;
+    background-image: url(../images/FondoContacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    #div-contacto{
+        background-color: $contact-color;
+        margin-top: -200px;
+        @include media-up(sm){
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @include media-up(lg){
+            padding: 30px;
+            border-radius: 20px;
+        }
+        #h1-contacto{
+            display: flex;
+            justify-content: center;
+            color: $text-color;
+            font-weight: regular;
+            font-size: 70px;
+            font-style: italic;
+            @include media-up(sm){
+                font-size: 30px;
+            }
+            @include media-up(lg){
+                font-size: 70px;
+            }
+        }
+        #p-sede{
+            display: flex;
+            justify-content: center;
+            color: $black-text-color;
+            font-weight: lighter;
+            @include media-up(sm){
+                font-size: 18px;
+            }
+            @include media-up(lg){
+                font-size: 30px;
+            }
+        }
+        .titulos-contacto{
+            
+            font-weight:lighter;
+            font-style: italic;
+            @include media-up(sm){
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            @include media-up(lg){
+                font-size: 25px;
+                margin-top: 30px;
+            }
+        }
+        .detalles-contacto{
+            font-weight: lighter;
+            @include media-up(sm){
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            @include media-up(lg){
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+    }
 }

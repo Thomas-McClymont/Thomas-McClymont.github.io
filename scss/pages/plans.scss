@@ -1,48 +1,85 @@
-@include media-up(lg){
-    #main-plan{
-        background-image: url(../images/FondoCalendar.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-family: 'Roboto';
+#main-plan{
+    font-family: $primary-typography;
+    background-image: url(../images/FondoCalendar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    @include media-up(sm){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @include media-up(lg){
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .div-plan{
+    }
+    .div-plan{ 
+        background-color: $plans-calendar-color;
+        padding: 20px;
+        color: $text-color;
+        @include media-up(sm){
+            border-radius: 10px;
+            margin: 15px;
+            width: 330px;
+        }
+        @include media-up(lg){
             border-radius: 15px;
             margin: 20px;
-            background-color: $plans-calendar-color;
             width: 270px;
-            padding: 20px;
-            color: $text-color;
-            .h2-plan{
-                display: flex;
-                justify-content: center;
+        }
+        .h2-plan{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-style: italic; 
+            @include media-up(sm){
+                font-size: 30px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            @include media-up(lg){
                 font-size: 40px;
-                font-weight: bold;
-                font-style: italic; 
                 padding: 20px;
             }
-            .detalles-plan{
-                padding-top: 10px;
-                padding-bottom: 10px;
+        }
+        .detalles-plan{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: lighter;
+            @include media-up(sm){
+                font-size: 18px;
+            }
+            @include media-up(lg){
                 font-size: 25px;
-                font-weight: lighter;
-
             }
-            .h3-membresia{
-                display: flex;
-                justify-content: center;
-                background-color: rgb(222, 133, 133);
+        }
+        .h3-membresia{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(222, 133, 133);
+            font-weight: lighter;
+            padding: 10px;
+            @include media-up(sm){
+                font-size: 18px;
+            }
+            @include media-up(lg){
                 font-size: 20px;
-                font-weight: lighter;
-                padding: 10px;  
+            }  
+        }
+        .p-monto{
+            font-weight: lighter;
+            @include media-up(sm){
+                font-size: 18px;
+                padding-top: 15px;
+                padding-bottom: 10px;
             }
-            .p-monto{
+            @include media-up(lg){
+                font-size: 20px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                font-size: 20px;
-                font-weight: lighter;
             }
         }
     }
