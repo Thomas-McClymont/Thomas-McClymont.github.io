@@ -11,10 +11,10 @@
         .div-plan{
             border-radius: 15px;
             margin: 20px;
-            background-color: rgba( #656565, 0.8);
+            background-color: $plans-calendar-color;
             width: 270px;
             padding: 20px;
-            color: white;
+            color: $text-color;
             .h2-plan{
                 display: flex;
                 justify-content: center;

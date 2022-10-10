@@ -1,6 +1,6 @@
 @include media-up(lg){
     #main-index{
-        font-family: 'Roboto';
+        font-family: $primary-typography;
         background-image: url(../images/FondoReal.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -17,12 +17,12 @@
         }
         #h1-wings{
             margin-top: -180px;
-            color: #fff;
+            color: $text-color;
             font-weight: 900;
             font-size: 180px;
         }
         #Rosario{
-            color: #fff;  
+            color: $text-color;  
             font-weight: lighter;
             font-size: 40px;
         }

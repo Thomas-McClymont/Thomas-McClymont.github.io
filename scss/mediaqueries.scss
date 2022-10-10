@@ -1,7 +1,6 @@
 $breakpoints: (
-    sm : 0px,
-    md : 768px,
-    lg : 1024px,
+    sm : 413px,
+    lg : 1024px
 );
 
 @mixin media-up($breakpoint) {

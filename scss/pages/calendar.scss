@@ -12,10 +12,10 @@
             .div-dias{
                 border-radius: 15px;
                 margin: 20px;
-                background-color: rgba( #656565, 0.8);
+                background-color: $plans-calendar-color;
                 width: 220px;
                 padding: 20px;
-                color: white;
+                color: $text-color;
                 .dia-h2{  
                     display: flex;
                     justify-content: center;
@@ -32,6 +32,33 @@
                     font-size: 25px;
                     font-weight: lighter;
                     padding: 10px;  
+                }
+                .musculacion-h3{
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: $musculacion-color;
+                    font-size: 25px;
+                    font-weight: lighter;
+                    padding: 10px;
+                }
+                .crossfit-h3{
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: $crossfit-color;
+                    font-size: 25px;
+                    font-weight: lighter;
+                    padding: 10px;
+                }
+                .spinning-h3{
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    background-color: $spinning-color;
+                    font-size: 25px;
+                    font-weight: lighter;
+                    padding: 10px;
                 }
                 .p-horarios{
                     padding: 10px;
