@@ -113,7 +113,10 @@ header {
         font-size: 40px; } }
   #main-index #boton-vermas {
     background-color: #C5A99C;
-    font-weight: lighter; }
+    font-weight: lighter;
+    text-decoration: none;
+    list-style-type: none;
+    color: black; }
     @media screen and (min-width: 413px) {
       #main-index #boton-vermas {
         font-size: 15px;

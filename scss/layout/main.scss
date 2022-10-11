@@ -41,6 +41,9 @@
     #boton-vermas{
         background-color: #C5A99C;
         font-weight: lighter;
+        text-decoration: none;
+        list-style-type: none;
+        color: $black-text-color;
         @include media-up(sm){
             font-size: 15px;
             padding: 15px;
